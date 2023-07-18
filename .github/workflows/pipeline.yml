@@ -32,8 +32,8 @@ jobs:
       - name: Dump Context For Runner
         env:
           RUNNER_CONTEXT: ${{ toJSON(runner) }}
-        run: |
-          echo "::debug::Runner context is above
+        run:
+          echo "::debug::Runner context is above"
 
   build:
     runs-on: ubuntu-latest
