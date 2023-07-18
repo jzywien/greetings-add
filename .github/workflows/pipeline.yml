@@ -30,10 +30,10 @@ jobs:
         run: |
           echo "::warning::This version is for debugging only"
       - name: Dump Context For Runner
-          env:
-            RUNNER_CONTEXT: ${{ toJSON(runner) }}
-          run:
-            echo "::debug::Runner context is above
+        env:
+          RUNNER_CONTEXT: ${{ toJSON(runner) }}
+        run:
+          echo "::debug::Runner context is above
 
   build:
     runs-on: ubuntu-latest
