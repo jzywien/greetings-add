@@ -12,6 +12,12 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      myVersion:
+        description: 'My Version'
+      myValues:
+        description: 'My Values'
 
 permissions:
   contents: read
