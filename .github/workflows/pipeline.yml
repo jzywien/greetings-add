@@ -50,5 +50,5 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
-        name: greetings-jar
+        name: greetings-${{ env.TDS }}-jar
         path: build/libs
